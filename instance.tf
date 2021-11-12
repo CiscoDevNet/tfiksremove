@@ -28,6 +28,9 @@ variable "globalwsname" {
 variable "hostwsname" {
   type = string
 }
+variable "trigcount" {
+  type = string
+}
 
 resource "null_resource" "vm_node_init" {
   triggers = {
